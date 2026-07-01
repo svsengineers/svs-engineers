@@ -1,0 +1,321 @@
+/* ===========================
+   SVS ENGINEERS CO.
+   Corporate Theme
+=========================== */
+
+:root {
+  --primary: #0a2c5a;
+  --secondary: #1e88e5;
+  --accent: #d4af37;
+  --light: #f8f9fa;
+  --dark: #1d1d1d;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Top Bar */
+
+.top-bar {
+  background: var(--primary);
+  color: white;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+/* Navigation */
+
+.navbar {
+  background: rgba(10, 44, 90, 0.95);
+
+  padding: 15px 0;
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  font-size: 28px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: white !important;
+
+  margin-left: 20px;
+
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--accent) !important;
+}
+
+/* Hero */
+
+.hero {
+  height: 90vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  background:
+    linear-gradient(rgba(7, 25, 55, 0.75), rgba(7, 25, 55, 0.75)),
+    url("../images/hero.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  color: white;
+}
+
+.hero h1 {
+  font-size: 62px;
+
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 22px;
+
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+
+.btn-warning {
+  background: var(--accent);
+
+  border: none;
+
+  padding: 14px 35px;
+
+  font-weight: 600;
+}
+
+.btn-warning:hover {
+  background: #c89d18;
+
+  transform: translateY(-3px);
+
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: var(--secondary);
+
+  border: none;
+
+  padding: 14px 35px;
+
+  margin-left: 15px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+/* Section */
+
+section {
+  padding: 80px 0;
+}
+
+section h2 {
+  font-size: 40px;
+
+  font-weight: 700;
+
+  color: var(--primary);
+
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+/* Cards */
+
+.card {
+  border: none;
+
+  border-radius: 15px;
+
+  transition: 0.4s;
+
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+.card h4 {
+  color: var(--primary);
+
+  font-weight: 600;
+
+  margin-bottom: 15px;
+}
+
+/* About */
+
+.lead {
+  max-width: 900px;
+
+  margin: auto;
+
+  font-size: 20px;
+}
+
+/* Footer */
+
+footer {
+  background: var(--primary);
+
+  color: white;
+
+  padding: 50px 0;
+
+  text-align: center;
+}
+
+footer h3 {
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+/* Floating WhatsApp */
+
+.whatsapp {
+  position: fixed;
+
+  right: 25px;
+
+  bottom: 25px;
+
+  width: 60px;
+
+  height: 60px;
+
+  border-radius: 50%;
+
+  background: #25d366;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 28px;
+
+  color: white;
+
+  text-decoration: none;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  z-index: 999;
+
+  transition: 0.3s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+
+  color: white;
+}
+
+/* Animations */
+
+.fadeUp {
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .navbar-brand {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 100%;
+
+    margin-top: 15px;
+  }
+
+  .btn-primary {
+    margin-left: 0;
+  }
+}
