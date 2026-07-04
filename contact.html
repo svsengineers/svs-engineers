@@ -158,7 +158,8 @@
 
                 <div class="col-lg-7">
 
-                    <form action="https://formsubmit.co/2c159ba2629f68e00526657f354c83ba" method="POST" onsubmit="return confirm('Are you sure you want to send this message?');">
+                    <form action="https://formsubmit.co/2c159ba2629f68e00526657f354c83ba" method="POST"
+                        onsubmit="return confirm('Are you sure you want to send this message?');">
                         <input type="hidden" name="_next" value="https://svsengineers.github.io/svs-engineers">
 
                         <div class="mb-3">
@@ -262,15 +263,16 @@
 
     <script src="assets/js/script.js"></script>
 
+    <script>
+        // Check if the URL contains '?success=true'
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+            alert('Thank you! Your enquiry has been submitted successfully.');
+
+            // Optional: Clean up the URL so the alert doesn't pop up again if they refresh
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+    </script>
 </body>
-<script>
-    // Check if the URL contains '?success=true'
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('success') === 'true') {
-        alert('Thank you! Your enquiry has been submitted successfully.');
-        
-        // Optional: Clean up the URL so the alert doesn't pop up again if they refresh
-        window.history.replaceState({}, document.title, window.location.pathname);
-    }
-</script>
+
 </html>
