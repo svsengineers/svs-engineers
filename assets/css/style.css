@@ -319,3 +319,206 @@ footer p {
     margin-left: 0;
   }
 }
+
+.stats {
+  background: #0a2c5a;
+
+  color: white;
+}
+
+.stats h2 {
+  font-size: 55px;
+
+  font-weight: bold;
+
+  color: #d4af37;
+}
+
+.stats p {
+  font-size: 18px;
+}
+
+.feature-card {
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  transition: 0.4s;
+
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.call-button {
+  position: fixed;
+
+  bottom: 100px;
+
+  left: 20px;
+
+  width: 60px;
+
+  height: 60px;
+
+  border-radius: 50%;
+
+  background: #0a2c5a;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  color: white;
+
+  font-size: 28px;
+
+  text-decoration: none;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+  z-index: 999;
+}
+
+/* Container to hold both buttons */
+.floating-contact-wrap {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the screen */
+  right: 20px; /* Distance from the right of the screen */
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Space between the Call and WhatsApp buttons */
+  z-index: 9999; /* Ensures it stays on top of all other content */
+}
+
+/* Base styles for both circular buttons */
+.floating-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+  text-decoration: none;
+}
+
+/* WhatsApp specific color (Green) */
+.btn-whatsapp {
+  background-color: #25d366;
+}
+
+/* Call specific color (Blue - matches your current "Call Now" theme) */
+.btn-call {
+  background-color: #007bff;
+}
+
+/* Hover effects for desktop */
+.floating-btn:hover {
+  transform: scale(1.1);
+}
+
+/* General Footer Styling */
+.footer-section {
+  background-color: #0d2149; /* Adjust this to match your exact dark blue */
+  color: #e0e0e0; /* Light gray text for better readability */
+  padding: 60px 0 20px 0; /* Adds breathing room at the top and bottom */
+}
+
+/* Headings */
+.footer-brand,
+.footer-heading {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Quick Links Styling */
+.footer-links {
+  list-style: none; /* Removes the default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #e0e0e0;
+  text-decoration: none; /* Removes the underline */
+  transition:
+    color 0.3s ease,
+    padding-left 0.3s ease;
+}
+
+/* Adds a nice hover effect to the links */
+.footer-links a:hover {
+  color: #ffc107; /* Matches your golden yellow accent color */
+  padding-left: 5px; /* Slight slide effect on hover */
+}
+
+/* Contact Info Styling */
+.footer-contact p {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spaces the icon and the text */
+}
+
+.footer-contact i {
+  color: #ffc107; /* Golden yellow icons */
+  font-size: 16px;
+}
+
+/* Makes phone and email links blend in nicely */
+.footer-contact a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #ffffff;
+}
+
+/* Divider Line */
+.footer-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 30px 0 20px 0;
+}
+
+/* Copyright Text */
+.footer-bottom p {
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+#progressBar {
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  height: 5px;
+
+  background: #d4af37;
+
+  width: 0;
+
+  z-index: 9999;
+}
