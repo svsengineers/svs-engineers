@@ -122,3 +122,45 @@ window.onscroll = function () {
 // Console Message
 
 console.log("SVS Engineers Website Loaded Successfully");
+
+window.addEventListener("load", function () {
+
+    const loader = document.getElementById("loader");
+
+    loader.style.opacity = "0";
+
+    setTimeout(function () {
+
+        loader.style.display = "none";
+
+    }, 700);
+
+});
+
+const topButton = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 400) {
+
+        topButton.style.display = "block";
+
+    } else {
+
+        topButton.style.display = "none";
+
+    }
+
+});
+
+topButton.addEventListener("click", () => {
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+});
