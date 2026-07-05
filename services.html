@@ -14,28 +14,29 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 
 </head>
 
 <body>
+    <div id="loader">
 
-    <!-- Top Bar -->
+        <div class="loader-content">
 
-    <div class="top-bar">
-        <div class="container">
+            <img src="assets/images/logo.png" alt="SVS Engineers">
 
-            📞 +91 75056 38710
+            <h2>SVS ENGINEERS CO.</h2>
 
-            &nbsp;&nbsp;
+            <p>Engineering Excellence You Can Trust</p>
 
-            📞 +91 88826 20668
-
-            &nbsp;&nbsp;
-
-            ✉ svsengineers.co@gmail.com
+            <div class="spinner"></div>
 
         </div>
+
     </div>
+    <!-- Top Bar -->
+    <div id="progressBar"></div>
 
     <!-- Navigation -->
 
@@ -43,10 +44,9 @@
 
         <div class="container">
 
-            <a class="navbar-brand fw-bold" href="index.html">
-
-                SVS ENGINEERS CO.
-
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.png" alt="SVS Engineers Co. Logo" class="navbar-logo me-2">
+                <span>SVS ENGINEERS CO.</span>
             </a>
 
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -304,25 +304,84 @@
 
     </section>
 
-    <footer>
+    <!-- Whatsapp and Call Floating Button -->
+    <section class="stats py-5">
+        <div class="floating-contact-wrap">
+            <!-- <a href="tel:+917505638710" class="floating-btn btn-call" title="Call Now">
+                <i class="fas fa-phone-alt"></i>
+            </a> -->
+            <a class="floating-btn btn-whatsapp" title="Chat on WhatsApp"
+                href="https://wa.me/917505638710?text=Hello%20SVS%20Engineers,%20I%20would%20like%20to%20discuss%20my%20project."
+                target="_blank"><i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </section>
 
-        <div class="container text-center">
+    <!-- Footer -->
 
-            <h3>SVS Engineers Co.</h3>
+    <footer class="footer">
 
-            <p>Engineering Excellence You Can Trust</p>
+        <div class="container">
 
-            <p>© 2026 SVS Engineers Co.</p>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                        <img src="assets/images/logo.png" alt="SVS Engineers Co. Logo" class="navbar-logo me-2">
+                        <span>SVS ENGINEERS CO.</span>
+                    </a>
+
+                    <p>
+
+                        Engineering Excellence You Can Trust
+
+                    </p>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <h4>Quick Links</h4>
+
+                    <ul class="list-unstyled">
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="projects.html">Projects</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <h4>Contact</h4>
+                    <p><i class="fa-solid fa-phone contact-icon"></i> +91 75056 38710</p>
+                    <p><i class="fa-solid fa-phone contact-icon"></i> +91 88826 20668</p>
+                    <p><i class="fa-solid fa-envelope contact-icon"></i> svsengineers.co@gmail.com</p>
+                    <p>Delhi, India</p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="text-center">
+
+                © 2026 SVS Engineers Co. All Rights Reserved.
+
+            </p>
 
         </div>
 
     </footer>
-
-    <a class="whatsapp" href="https://wa.me/917505638710" target="_blank">
-
-        💬
-
-    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
