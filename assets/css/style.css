@@ -961,3 +961,1286 @@ footer p {
     display: inline-flex !important;
     align-items: center;
 }
+
+
+/* =========================================================
+   SVS ENGINEERS - MODERN SERVICES PAGE
+   ========================================================= */
+
+
+/* ---------- GLOBAL ---------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.services-section,
+.amc-section,
+.civil-infra-section,
+.process-section,
+.renovation-section,
+.services-intro {
+    padding: 90px 0;
+}
+
+.section-label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #f5a900;
+    margin-bottom: 12px;
+}
+
+.section-heading h2,
+.services-intro h2,
+.renovation-section h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.section-heading h2 span,
+.services-intro h2 span,
+.renovation-section h2 span {
+    color: #f5a900;
+}
+
+.section-heading p {
+    max-width: 720px;
+    margin: auto;
+    color: #777;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.services-hero {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(5, 15, 30, .94),
+            rgba(5, 15, 30, .72)
+        ),
+        url("../images/services-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.services-hero::before {
+    content: "";
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    border: 1px solid rgba(255, 193, 7, .2);
+    border-radius: 50%;
+
+    right: -150px;
+    top: -100px;
+
+    animation: rotateCircle 20s linear infinite;
+}
+
+.services-hero::after {
+    content: "";
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 50%;
+
+    left: -100px;
+    bottom: -100px;
+
+    animation: rotateCircle 15s linear infinite reverse;
+}
+
+.hero-content {
+    animation: heroFade 1.2s ease forwards;
+}
+
+.hero-badge {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border: 1px solid rgba(255, 193, 7, .5);
+
+    border-radius: 50px;
+
+    color: #ffc107;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 25px;
+}
+
+.services-hero h1 {
+    color: #fff;
+
+    font-size: clamp(42px, 7vw, 76px);
+
+    font-weight: 800;
+
+    margin-bottom: 20px;
+}
+
+.services-hero h1 span {
+    color: #ffc107;
+}
+
+.services-hero p {
+    max-width: 750px;
+
+    margin: 0 auto 30px;
+
+    color: rgba(255, 255, 255, .82);
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+.hero-buttons .btn {
+    padding: 13px 28px;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+}
+
+.hero-scroll {
+    position: absolute;
+
+    bottom: 25px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #ffc107;
+
+    animation: bounceArrow 1.5s infinite;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.services-intro {
+    background: #fff;
+}
+
+.services-intro p {
+    color: #666;
+
+    line-height: 1.9;
+}
+
+.service-highlight-box {
+    position: relative;
+
+    padding: 40px;
+
+    background: linear-gradient(
+        135deg,
+        #071426,
+        #102b48
+    );
+
+    color: #fff;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .15);
+}
+
+.service-highlight-box::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 193, 7, .08);
+
+    right: -60px;
+    top: -60px;
+}
+
+.highlight-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: #ffc107;
+
+    color: #111;
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+.service-highlight-box h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.service-highlight-box p {
+    color: rgba(255, 255, 255, .75);
+}
+
+.highlight-items {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px;
+
+    margin-top: 25px;
+}
+
+.highlight-items div {
+    font-size: 14px;
+}
+
+.highlight-items i {
+    color: #ffc107;
+
+    margin-right: 8px;
+}
+
+
+/* =========================================================
+   SERVICE CARDS
+   ========================================================= */
+
+.services-section {
+    background: #f6f8fb;
+}
+
+.modern-service-card {
+    height: 100%;
+
+    position: relative;
+
+    padding: 35px;
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    border: 1px solid #e8edf3;
+
+    overflow: hidden;
+
+    transition: .4s ease;
+
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.modern-service-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.modern-service-card:hover {
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, .12);
+
+    border-color: rgba(255, 193, 7, .5);
+}
+
+.service-number {
+    position: absolute;
+
+    right: 20px;
+    top: 15px;
+
+    font-size: 60px;
+
+    font-weight: 800;
+
+    color: #f2f4f7;
+
+    transition: .4s;
+}
+
+.modern-service-card:hover .service-number {
+    color: rgba(255, 193, 7, .15);
+}
+
+.service-icon {
+    width: 68px;
+    height: 68px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    margin-bottom: 25px;
+
+    font-size: 28px;
+
+    transition: .4s;
+}
+
+.modern-service-card:hover .service-icon {
+    transform: rotateY(180deg);
+}
+
+.service-icon.civil {
+    background: #fff1d6;
+    color: #d98200;
+}
+
+.service-icon.electrical {
+    background: #fff6cf;
+    color: #e0a000;
+}
+
+.service-icon.hvac {
+    background: #dff5ff;
+    color: #0085b8;
+}
+
+.service-icon.plumbing {
+    background: #dff0ff;
+    color: #0075bb;
+}
+
+.service-icon.fire {
+    background: #ffe0df;
+    color: #dc3025;
+}
+
+.service-icon.elv {
+    background: #e8e0ff;
+    color: #6844c5;
+}
+
+.service-icon.interior {
+    background: #f6e2d7;
+    color: #ad5b31;
+}
+
+.service-icon.project {
+    background: #dff6e9;
+    color: #18854a;
+}
+
+.service-icon.testing {
+    background: #e1ecff;
+    color: #346dc5;
+}
+
+.modern-service-card h3 {
+    font-size: 23px;
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+.modern-service-card > p {
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+.modern-service-card ul {
+    padding: 0;
+
+    margin: 22px 0 0;
+
+    list-style: none;
+}
+
+.modern-service-card li {
+    font-size: 14px;
+
+    color: #555;
+
+    margin-bottom: 9px;
+}
+
+.modern-service-card li::before {
+    content: "✓";
+
+    color: #f5a900;
+
+    font-weight: 700;
+
+    margin-right: 9px;
+}
+
+
+/* =========================================================
+   RENOVATION
+   ========================================================= */
+
+.renovation-section {
+    background:
+        linear-gradient(
+            120deg,
+            #071426,
+            #102b48
+        );
+
+    color: #fff;
+}
+
+.renovation-section p {
+    color: rgba(255, 255, 255, .72);
+
+    line-height: 1.8;
+}
+
+.renovation-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.renovation-item {
+    min-height: 130px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, .06);
+
+    border: 1px solid rgba(255, 255, 255, .1);
+
+    border-radius: 18px;
+
+    transition: .35s;
+
+    opacity: 0;
+    transform: scale(.9);
+}
+
+.renovation-item.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.renovation-item:hover {
+    background: #ffc107;
+
+    color: #111;
+
+    transform: translateY(-7px);
+}
+
+.renovation-item i {
+    font-size: 28px;
+
+    margin-bottom: 12px;
+
+    color: #ffc107;
+}
+
+.renovation-item:hover i {
+    color: #111;
+}
+
+.renovation-item span {
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   AMC / CAMC
+   ========================================================= */
+
+.amc-section {
+    background: #fff;
+}
+
+.amc-card {
+    position: relative;
+
+    height: 100%;
+
+    padding: 35px;
+
+    background: #f8f9fb;
+
+    border: 1px solid #e7ebef;
+
+    border-radius: 22px;
+
+    transition: .35s;
+}
+
+.amc-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .1);
+}
+
+.amc-card.featured {
+    background:
+        linear-gradient(
+            135deg,
+            #071426,
+            #123250
+        );
+
+    color: #fff;
+
+    border: none;
+}
+
+.popular-badge {
+    position: absolute;
+
+    right: 20px;
+    top: 20px;
+
+    background: #ffc107;
+
+    color: #111;
+
+    padding: 6px 12px;
+
+    border-radius: 50px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.amc-card-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+.amc-icon {
+    width: 65px;
+    height: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: #ffc107;
+
+    color: #111;
+
+    font-size: 25px;
+}
+
+.amc-card h3 {
+    font-size: 22px;
+
+    margin: 0 0 5px;
+}
+
+.amc-card-header p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+.featured .amc-card-header p {
+    color: rgba(255, 255, 255, .65);
+}
+
+.amc-list {
+    padding: 0;
+
+    margin: 0;
+
+    list-style: none;
+}
+
+.amc-list li {
+    padding: 11px 0;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .07);
+
+    font-size: 14px;
+}
+
+.featured .amc-list li {
+    border-bottom-color: rgba(255, 255, 255, .1);
+}
+
+.amc-list i {
+    color: #f5a900;
+
+    margin-right: 10px;
+}
+
+.equipment-title {
+    text-align: center;
+
+    margin: 70px 0 30px;
+}
+
+.equipment-title h3 {
+    font-size: 27px;
+}
+
+.equipment-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.equipment-grid div {
+    padding: 20px;
+
+    border: 1px solid #e5e9ee;
+
+    border-radius: 15px;
+
+    background: #fff;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    transition: .3s;
+}
+
+.equipment-grid div:hover {
+    transform: translateY(-5px);
+
+    border-color: #ffc107;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .07);
+}
+
+.equipment-grid i {
+    color: #f5a900;
+
+    font-size: 21px;
+}
+
+.equipment-grid span {
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   CIVIL INFRASTRUCTURE
+   ========================================================= */
+
+.civil-infra-section {
+    background: #f6f8fb;
+}
+
+.infra-card {
+    height: 100%;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    border: 1px solid #e5e9ef;
+
+    transition: .35s;
+
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.infra-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.infra-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .1);
+}
+
+.infra-card > i {
+    width: 65px;
+    height: 65px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff5d8;
+
+    color: #e0a000;
+
+    font-size: 27px;
+
+    margin-bottom: 20px;
+}
+
+.infra-card h4 {
+    font-size: 19px;
+
+    font-weight: 700;
+}
+
+.infra-card p {
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   MAINTENANCE FLOW
+   ========================================================= */
+
+.maintenance-box {
+    margin-top: 50px;
+
+    padding: 35px;
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .06);
+}
+
+.maintenance-box h3 {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.maintenance-flow {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.maintenance-flow div {
+    padding: 13px 18px;
+
+    border-radius: 50px;
+
+    background: #f5f7f9;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.maintenance-flow div:hover {
+    background: #ffc107;
+
+    transform: translateY(-3px);
+}
+
+.maintenance-flow span {
+    color: #f0a900;
+
+    margin-right: 8px;
+}
+
+.maintenance-flow div:hover span {
+    color: #111;
+}
+
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.process-section {
+    background: #fff;
+}
+
+.process-timeline {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 20px;
+
+    margin-top: 60px;
+}
+
+.process-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 10%;
+
+    right: 10%;
+
+    top: 35px;
+
+    height: 2px;
+
+    background: #e7ebef;
+
+    z-index: 0;
+}
+
+.process-step {
+    position: relative;
+
+    text-align: center;
+
+    z-index: 1;
+
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.process-step.show {
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition: .6s ease;
+}
+
+.process-circle {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #ffc107;
+
+    color: #111;
+
+    font-weight: 800;
+
+    box-shadow: 0 0 0 10px #fff;
+}
+
+.process-step h4 {
+    font-size: 18px;
+}
+
+.process-step p {
+    color: #777;
+
+    font-size: 13px;
+
+    max-width: 180px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.service-cta {
+    padding: 80px 0;
+
+    background: #f6f8fb;
+}
+
+.cta-box {
+    padding: 65px 25px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071426,
+            #163a5c
+        );
+
+    color: #fff;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.cta-box::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 193, 7, .15);
+
+    right: -120px;
+    top: -170px;
+}
+
+.cta-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #ffc107;
+
+    color: #111;
+
+    font-size: 28px;
+}
+
+.cta-box h2 {
+    font-size: clamp(28px, 4vw, 44px);
+
+    font-weight: 700;
+
+    position: relative;
+}
+
+.cta-box p {
+    max-width: 650px;
+
+    margin: 15px auto 30px;
+
+    color: rgba(255, 255, 255, .7);
+
+    position: relative;
+}
+
+.cta-box .btn {
+    border-radius: 50px;
+
+    padding: 13px 25px;
+
+    font-weight: 600;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   FLOATING WHATSAPP
+   ========================================================= */
+
+.floating-contact-wrap {
+    position: fixed;
+
+    right: 22px;
+    bottom: 22px;
+
+    z-index: 9999;
+}
+
+.floating-btn {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #fff;
+
+    font-size: 27px;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, .25);
+
+    animation: whatsappPulse 2s infinite;
+}
+
+.btn-whatsapp {
+    background: #25d366;
+}
+
+.floating-btn:hover {
+    color: #fff;
+
+    transform: scale(1.1);
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes heroFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes bounceArrow {
+
+    0%,
+    100% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, 10px);
+    }
+
+}
+
+@keyframes rotateCircle {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes whatsappPulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(37, 211, 102, .5);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(37, 211, 102, 0);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .services-hero {
+        min-height: 60vh;
+    }
+
+    .renovation-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .equipment-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .process-timeline {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .process-timeline::before {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .services-section,
+    .amc-section,
+    .civil-infra-section,
+    .process-section,
+    .renovation-section,
+    .services-intro {
+        padding: 65px 0;
+    }
+
+    .services-hero {
+        min-height: 70vh;
+    }
+
+    .services-hero h1 {
+        font-size: 42px;
+    }
+
+    .services-hero p {
+        font-size: 15px;
+    }
+
+    .hero-buttons .btn {
+        display: block;
+
+        width: 90%;
+
+        margin: 10px auto !important;
+    }
+
+    .highlight-items {
+        grid-template-columns: 1fr;
+    }
+
+    .renovation-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .equipment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-timeline {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .process-step p {
+        max-width: 300px;
+    }
+
+    .cta-box {
+        padding: 50px 18px;
+    }
+
+    .cta-box .btn {
+        display: block;
+
+        width: 90%;
+
+        margin: 10px auto !important;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .renovation-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .equipment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modern-service-card {
+        padding: 28px 24px;
+    }
+
+    .amc-card {
+        padding: 28px 22px;
+    }
+
+}
