@@ -8,18 +8,24 @@
 
     <title>Services | SVS Engineers Co.</title>
 
+    <meta name="description"
+        content="SVS Engineers Co. provides building renovation, civil infrastructure, electrical, HVAC, plumbing, fire safety, AMC, CAMC, BMS, ELV and engineering services.">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
+
+    <!-- ================= LOADER ================= -->
+
     <div id="loader">
 
         <div class="loader-content">
@@ -35,39 +41,68 @@
         </div>
 
     </div>
-    <!-- Top Bar -->
+
+
+    <!-- ================= PROGRESS BAR ================= -->
+
     <div id="progressBar"></div>
 
-    <!-- Navigation -->
+
+    <!-- ================= NAVIGATION ================= -->
 
     <nav class="navbar navbar-expand-lg navbar-dark">
 
         <div class="container">
 
             <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+
                 <img src="assets/images/logo.png" alt="SVS Engineers Co. Logo" class="navbar-logo me-2">
+
                 <span>SVS ENGINEERS CO.</span>
+
             </a>
 
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
 
                 <span class="navbar-toggler-icon"></span>
 
             </button>
 
+
             <div class="collapse navbar-collapse" id="menu">
 
                 <ul class="navbar-nav ms-auto">
 
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
 
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            About
+                        </a>
+                    </li>
 
-                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">
+                            Services
+                        </a>
+                    </li>
 
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">
+                            Projects
+                        </a>
+                    </li>
 
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
 
                 </ul>
 
@@ -77,134 +112,516 @@
 
     </nav>
 
-    <!-- Hero -->
 
-    <section class="hero" style="height:45vh;">
+    <!-- ================= HERO ================= -->
 
-        <div class="container text-center">
+    <section class="services-hero">
 
-            <h1>Our Services</h1>
+        <div class="services-hero-overlay"></div>
 
-            <p>Professional Engineering Solutions</p>
+        <div class="container position-relative">
+
+            <div class="hero-content text-center">
+
+                <span class="hero-badge">
+                    <i class="fa-solid fa-gears"></i>
+                    ENGINEERING & FACILITY SOLUTIONS
+                </span>
+
+                <h1>
+                    Our <span>Engineering Services</span>
+                </h1>
+
+                <p>
+                    Integrated engineering, infrastructure, renovation,
+                    maintenance and facility management solutions.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#services" class="btn btn-warning btn-lg me-2">
+                        Explore Services
+                    </a>
+
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">
+                        Request a Quote
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-scroll">
+
+            <i class="fa-solid fa-chevron-down"></i>
 
         </div>
 
     </section>
 
-    <!-- Services -->
 
-    <section>
+    <!-- ================= INTRO ================= -->
+
+    <section class="services-intro">
 
         <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <span class="section-label">
+                        WHAT WE DO
+                    </span>
+
+                    <h2>
+                        Complete Engineering
+                        <span>Solutions Under One Roof</span>
+                    </h2>
+
+                    <p>
+                        SVS Engineers Co. provides multidisciplinary engineering
+                        and facility solutions for commercial buildings,
+                        industrial facilities, institutional projects and
+                        data-centre-type environments.
+                    </p>
+
+                    <p>
+                        From civil renovation and electrical systems to HVAC,
+                        fire safety, plumbing, ELV, AMC/CAMC and testing &
+                        commissioning, our team supports projects throughout
+                        their lifecycle.
+                    </p>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="service-highlight-box">
+
+                        <div class="highlight-icon">
+                            <i class="fa-solid fa-building-circle-check"></i>
+                        </div>
+
+                        <h3>
+                            Integrated Facility Engineering
+                        </h3>
+
+                        <p>
+                            Design support, execution, preventive maintenance,
+                            breakdown maintenance, compliance and handover.
+                        </p>
+
+                        <div class="highlight-items">
+
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                Project Execution
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                Preventive Maintenance
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                Breakdown Support
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                Testing & Commissioning
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN SERVICES ================= -->
+
+    <section id="services" class="services-section">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span class="section-label">
+                    OUR CAPABILITIES
+                </span>
+
+                <h2>
+                    Engineering Services
+                </h2>
+
+                <p>
+                    Professional solutions for building, infrastructure
+                    and critical facility requirements.
+                </p>
+
+            </div>
+
 
             <div class="row g-4">
 
-                <div class="col-lg-4">
 
-                    <div class="card p-4 shadow h-100">
+                <!-- CIVIL -->
 
-                        <h3>🏗 Civil Engineering</h3>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="modern-service-card">
+
+                        <div class="service-number">
+                            01
+                        </div>
+
+                        <div class="service-icon civil">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <h3>
+                            Civil Engineering
+                        </h3>
 
                         <p>
-
-                            Structural works, construction supervision, planning, estimation,
-                            site execution and infrastructure development.
-
+                            Construction, structural repair, renovation,
+                            infrastructure and finishing works.
                         </p>
+
+                        <ul>
+
+                            <li>RCC & Structural Works</li>
+                            <li>Masonry & Plastering</li>
+                            <li>Waterproofing</li>
+                            <li>Flooring & Epoxy Flooring</li>
+                            <li>Painting & Finishing</li>
+                            <li>Road & External Development</li>
+
+                        </ul>
 
                     </div>
 
                 </div>
 
-                <div class="col-lg-4">
 
-                    <div class="card p-4 shadow h-100">
+                <!-- ELECTRICAL -->
 
-                        <h3>⚙ Mechanical Engineering</h3>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="modern-service-card">
+
+                        <div class="service-number">
+                            02
+                        </div>
+
+                        <div class="service-icon electrical">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <h3>
+                            Electrical Engineering
+                        </h3>
 
                         <p>
-
-                            Industrial fabrication, machinery installation,
-                            maintenance and mechanical system solutions.
-
+                            Electrical installation, distribution,
+                            modification, testing and commissioning.
                         </p>
+
+                        <ul>
+
+                            <li>HT / LT Systems</li>
+                            <li>Electrical DB & Panels</li>
+                            <li>Cable Laying & Management</li>
+                            <li>Lighting & Power Systems</li>
+                            <li>Earthing Systems</li>
+                            <li>Protection & Testing</li>
+
+                        </ul>
 
                     </div>
 
                 </div>
 
-                <div class="col-lg-4">
 
-                    <div class="card p-4 shadow h-100">
+                <!-- HVAC -->
 
-                        <h3>⚡ Electrical Engineering</h3>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="modern-service-card">
+
+                        <div class="service-number">
+                            03
+                        </div>
+
+                        <div class="service-icon hvac">
+                            <i class="fa-solid fa-fan"></i>
+                        </div>
+
+                        <h3>
+                            HVAC Engineering
+                        </h3>
 
                         <p>
-
-                            Electrical installations,
-                            LT & HT systems,
-                            cable laying,
-                            control panels and commissioning.
-
+                            HVAC installation, modification, ventilation
+                            and climate-control solutions.
                         </p>
+
+                        <ul>
+
+                            <li>VRV / VRF Systems</li>
+                            <li>Chiller Systems</li>
+                            <li>AC Installation</li>
+                            <li>Ducting</li>
+                            <li>Ventilation</li>
+                            <li>HVAC Controls</li>
+
+                        </ul>
 
                     </div>
 
                 </div>
 
-                <div class="col-lg-4">
 
-                    <div class="card p-4 shadow h-100">
+                <!-- PLUMBING -->
 
-                        <h3>🔥 Fire Safety</h3>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="modern-service-card">
+
+                        <div class="service-number">
+                            04
+                        </div>
+
+                        <div class="service-icon plumbing">
+                            <i class="fa-solid fa-faucet-drip"></i>
+                        </div>
+
+                        <h3>
+                            Plumbing & Water Systems
+                        </h3>
 
                         <p>
-
-                            Fire alarm systems,
-                            hydrant systems,
-                            sprinklers,
-                            extinguishers and fire compliance.
-
+                            Water supply, drainage, sanitary and
+                            pump-related engineering services.
                         </p>
+
+                        <ul>
+
+                            <li>Water Supply Systems</li>
+                            <li>Drainage Systems</li>
+                            <li>Sanitary Fixtures</li>
+                            <li>Water Pumps</li>
+                            <li>Storage Tanks</li>
+                            <li>Pipeline Works</li>
+
+                        </ul>
 
                     </div>
 
                 </div>
 
-                <div class="col-lg-4">
 
-                    <div class="card p-4 shadow h-100">
+                <!-- FIRE -->
 
-                        <h3>📋 Project Management</h3>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="modern-service-card">
+
+                        <div class="service-number">
+                            05
+                        </div>
+
+                        <div class="service-icon fire">
+                            <i class="fa-solid fa-fire-extinguisher"></i>
+                        </div>
+
+                        <h3>
+                            Fire & Safety
+                        </h3>
 
                         <p>
-
-                            Planning,
-                            scheduling,
-                            resource management,
-                            quality control
-                            and project delivery.
-
+                            Fire protection, detection and life-safety
+                            system installation and maintenance.
                         </p>
+
+                        <ul>
+
+                            <li>Fire Alarm Systems</li>
+                            <li>Hydrant Systems</li>
+                            <li>Sprinkler Systems</li>
+                            <li>Fire Fighting Piping</li>
+                            <li>Emergency Lighting</li>
+                            <li>Exit Signage</li>
+
+                        </ul>
 
                     </div>
 
                 </div>
 
-                <div class="col-lg-4">
 
-                    <div class="card p-4 shadow h-100">
+                <!-- ELV -->
 
-                        <h3>🤝 Engineering Consultancy</h3>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="modern-service-card">
+
+                        <div class="service-number">
+                            06
+                        </div>
+
+                        <div class="service-icon elv">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+
+                        <h3>
+                            ELV & Building Services
+                        </h3>
 
                         <p>
-
-                            Engineering consultation,
-                            technical guidance,
-                            inspection,
-                            documentation and project support.
-
+                            Smart building and low-voltage technology
+                            solutions for modern facilities.
                         </p>
+
+                        <ul>
+
+                            <li>CCTV Systems</li>
+                            <li>Access Control</li>
+                            <li>Networking</li>
+                            <li>BMS</li>
+                            <li>Communication Systems</li>
+                            <li>Other ELV Systems</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INTERIOR -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="modern-service-card">
+
+                        <div class="service-number">
+                            07
+                        </div>
+
+                        <div class="service-icon interior">
+                            <i class="fa-solid fa-paint-roller"></i>
+                        </div>
+
+                        <h3>
+                            Interior & Renovation
+                        </h3>
+
+                        <p>
+                            Complete building renovation and interior
+                            improvement solutions.
+                        </p>
+
+                        <ul>
+
+                            <li>Demolition Works</li>
+                            <li>Partitions</li>
+                            <li>False Ceiling</li>
+                            <li>Doors & Windows</li>
+                            <li>Painting</li>
+                            <li>Furniture Works</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT MANAGEMENT -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="modern-service-card">
+
+                        <div class="service-number">
+                            08
+                        </div>
+
+                        <div class="service-icon project">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+
+                        <h3>
+                            Project Management
+                        </h3>
+
+                        <p>
+                            Professional planning, coordination,
+                            supervision and project delivery.
+                        </p>
+
+                        <ul>
+
+                            <li>Project Planning</li>
+                            <li>Scheduling</li>
+                            <li>Resource Management</li>
+                            <li>Quality Control</li>
+                            <li>Site Supervision</li>
+                            <li>Project Delivery</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TESTING -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="modern-service-card">
+
+                        <div class="service-number">
+                            09
+                        </div>
+
+                        <div class="service-icon testing">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+
+                        <h3>
+                            Testing & Commissioning
+                        </h3>
+
+                        <p>
+                            System inspection, performance testing,
+                            commissioning and final handover.
+                        </p>
+
+                        <ul>
+
+                            <li>Electrical Testing</li>
+                            <li>Equipment Testing</li>
+                            <li>System Inspection</li>
+                            <li>Performance Verification</li>
+                            <li>Documentation</li>
+                            <li>Final Handover</li>
+
+                        </ul>
 
                     </div>
 
@@ -216,57 +633,111 @@
 
     </section>
 
-    <!-- Process -->
 
-    <section class="bg-light">
+    <!-- ================= BUILDING RENOVATION ================= -->
+
+    <section class="renovation-section">
 
         <div class="container">
 
-            <h2 class="text-center mb-5">
+            <div class="row align-items-center g-5">
 
-                Our Working Process
+                <div class="col-lg-5">
 
-            </h2>
+                    <span class="section-label">
+                        BUILDING RENOVATION
+                    </span>
 
-            <div class="row text-center">
+                    <h2>
+                        Complete Renovation
+                        <span>Works</span>
+                    </h2>
 
-                <div class="col">
+                    <p>
+                        We provide multidisciplinary renovation support
+                        for commercial buildings, offices, institutions
+                        and critical facilities.
+                    </p>
 
-                    <h4>1</h4>
+                    <a href="contact.html" class="btn btn-warning mt-3">
 
-                    <p>Consultation</p>
+                        Discuss Your Project
+                        <i class="fa-solid fa-arrow-right ms-2"></i>
 
-                </div>
-
-                <div class="col">
-
-                    <h4>2</h4>
-
-                    <p>Planning</p>
-
-                </div>
-
-                <div class="col">
-
-                    <h4>3</h4>
-
-                    <p>Execution</p>
+                    </a>
 
                 </div>
 
-                <div class="col">
 
-                    <h4>4</h4>
+                <div class="col-lg-7">
 
-                    <p>Inspection</p>
+                    <div class="renovation-grid">
 
-                </div>
+                        <div class="renovation-item">
 
-                <div class="col">
+                            <i class="fa-solid fa-hammer"></i>
 
-                    <h4>5</h4>
+                            <span>Civil Works</span>
 
-                    <p>Delivery</p>
+                        </div>
+
+                        <div class="renovation-item">
+
+                            <i class="fa-solid fa-plug"></i>
+
+                            <span>Electrical</span>
+
+                        </div>
+
+                        <div class="renovation-item">
+
+                            <i class="fa-solid fa-wind"></i>
+
+                            <span>HVAC</span>
+
+                        </div>
+
+                        <div class="renovation-item">
+
+                            <i class="fa-solid fa-faucet"></i>
+
+                            <span>Plumbing</span>
+
+                        </div>
+
+                        <div class="renovation-item">
+
+                            <i class="fa-solid fa-fire"></i>
+
+                            <span>Fire & Safety</span>
+
+                        </div>
+
+                        <div class="renovation-item">
+
+                            <i class="fa-solid fa-couch"></i>
+
+                            <span>Interior</span>
+
+                        </div>
+
+                        <div class="renovation-item">
+
+                            <i class="fa-solid fa-video"></i>
+
+                            <span>ELV / CCTV</span>
+
+                        </div>
+
+                        <div class="renovation-item">
+
+                            <i class="fa-solid fa-vial-circle-check"></i>
+
+                            <span>Commissioning</span>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -276,96 +747,660 @@
 
     </section>
 
-    <!-- CTA -->
 
-    <section>
+    <!-- ================= AMC / CAMC ================= -->
 
-        <div class="container text-center">
+    <section class="amc-section">
 
-            <h2>
+        <div class="container">
 
-                Need Engineering Support?
+            <div class="section-heading text-center">
 
-            </h2>
+                <span class="section-label">
+                    FACILITY MAINTENANCE
+                </span>
 
-            <p>
+                <h2>
+                    AMC / CAMC Services
+                </h2>
 
-                Contact our engineering team today for reliable and professional solutions.
+                <p>
+                    Preventive and comprehensive maintenance solutions
+                    for critical building equipment and infrastructure.
+                </p>
 
-            </p>
+            </div>
 
-            <a href="contact.html" class="btn btn-warning btn-lg">
 
-                Request a Quote
+            <div class="row g-4">
 
-            </a>
+
+                <div class="col-lg-6">
+
+                    <div class="amc-card">
+
+                        <div class="amc-card-header">
+
+                            <div class="amc-icon">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+
+                            <div>
+                                <h3>
+                                    Non-Comprehensive AMC
+                                </h3>
+
+                                <p>
+                                    Preventive & Breakdown Maintenance
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <ul class="amc-list">
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Preventive maintenance
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Breakdown service visits
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Labour / service support
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Equipment inspection
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Major spare parts charged separately
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="amc-card featured">
+
+                        <div class="popular-badge">
+                            COMPREHENSIVE
+                        </div>
+
+                        <div class="amc-card-header">
+
+                            <div class="amc-icon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+
+                            <div>
+                                <h3>
+                                    Comprehensive CAMC
+                                </h3>
+
+                                <p>
+                                    Complete Equipment Protection
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <ul class="amc-list">
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Preventive maintenance
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Breakdown maintenance
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Labour & specified spares
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Consumables as per contract
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Critical equipment support
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- AMC EQUIPMENT -->
+
+            <div class="equipment-title">
+
+                <h3>
+                    Equipment & Systems Covered
+                </h3>
+
+            </div>
+
+
+            <div class="equipment-grid">
+
+                <div>
+                    <i class="fa-solid fa-snowflake"></i>
+                    <span>HVAC / VRF / Chiller</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>DG Sets</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-car-battery"></i>
+                    <span>UPS & Batteries</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <span>HT / LT Panels</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-transformer-bolt"></i>
+                    <span>Transformer</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-fire-extinguisher"></i>
+                    <span>Fire Fighting</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-bell"></i>
+                    <span>Fire Alarm</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-elevator"></i>
+                    <span>Lifts</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-display"></i>
+                    <span>BMS</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <span>CCTV / Access Control</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-faucet-drip"></i>
+                    <span>Plumbing / Pumps</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-water"></i>
+                    <span>STP / WTP</span>
+                </div>
+
+            </div>
 
         </div>
 
     </section>
 
-    <!-- Whatsapp and Call Floating Button -->
-    <section class="stats py-5">
-        <div class="floating-contact-wrap">
-            <!-- <a href="tel:+918218008710" class="floating-btn btn-call" title="Call Now">
-                <i class="fas fa-phone-alt"></i>
-            </a> -->
-            <a class="floating-btn btn-whatsapp" title="Chat on WhatsApp"
-                href="https://wa.me/918218008710?text=Hello%20SVS%20Engineers,%20I%20would%20like%20to%20discuss%20my%20project."
-                target="_blank"><i class="fab fa-whatsapp"></i>
-            </a>
+
+    <!-- ================= CIVIL INFRA ================= -->
+
+    <section class="civil-infra-section">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span class="section-label">
+                    INFRASTRUCTURE
+                </span>
+
+                <h2>
+                    Civil Infrastructure Works
+                </h2>
+
+                <p>
+                    Reliable civil infrastructure solutions for buildings,
+                    industrial facilities and data-centre-type environments.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="infra-card">
+
+                        <i class="fa-solid fa-building"></i>
+
+                        <h4>
+                            Building & Structural
+                        </h4>
+
+                        <p>
+                            RCC repairs, masonry, structural strengthening,
+                            roof works and expansion joints.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="infra-card">
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                        <h4>
+                            Flooring & Finishing
+                        </h4>
+
+                        <p>
+                            Epoxy, anti-static flooring, tiles, leveling,
+                            painting and wall finishing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="infra-card">
+
+                        <i class="fa-solid fa-road"></i>
+
+                        <h4>
+                            Roads & External Works
+                        </h4>
+
+                        <p>
+                            Internal roads, paving, parking, kerbs,
+                            walkways, drainage and fencing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="infra-card">
+
+                        <i class="fa-solid fa-database"></i>
+
+                        <h4>
+                            Critical Facility Civil
+                        </h4>
+
+                        <p>
+                            Equipment foundations, cable trenches,
+                            raised floors and fire-rated penetrations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MAINTENANCE TYPES -->
+
+            <div class="maintenance-box">
+
+                <h3>
+                    Civil Maintenance Categories
+                </h3>
+
+                <div class="maintenance-flow">
+
+                    <div>
+                        <span>01</span>
+                        Preventive Maintenance
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        Breakdown Maintenance
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        Minor Civil Works
+                    </div>
+
+                    <div>
+                        <span>04</span>
+                        Major Civil Works
+                    </div>
+
+                    <div>
+                        <span>05</span>
+                        Emergency Works
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+
     </section>
 
-    <!-- Footer -->
+
+    <!-- ================= WORKING PROCESS ================= -->
+
+    <section class="process-section">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span class="section-label">
+                    HOW WE WORK
+                </span>
+
+                <h2>
+                    Our Working Process
+                </h2>
+
+            </div>
+
+
+            <div class="process-timeline">
+
+
+                <div class="process-step">
+
+                    <div class="process-circle">
+                        01
+                    </div>
+
+                    <h4>
+                        Consultation
+                    </h4>
+
+                    <p>
+                        Understand requirements and site conditions.
+                    </p>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="process-circle">
+                        02
+                    </div>
+
+                    <h4>
+                        Planning
+                    </h4>
+
+                    <p>
+                        Develop scope, schedule and execution plan.
+                    </p>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="process-circle">
+                        03
+                    </div>
+
+                    <h4>
+                        Execution
+                    </h4>
+
+                    <p>
+                        Execute works with safety and quality controls.
+                    </p>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="process-circle">
+                        04
+                    </div>
+
+                    <h4>
+                        Testing
+                    </h4>
+
+                    <p>
+                        Inspect, test and verify completed systems.
+                    </p>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="process-circle">
+                        05
+                    </div>
+
+                    <h4>
+                        Handover
+                    </h4>
+
+                    <p>
+                        Documentation, commissioning and final handover.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="service-cta">
+
+        <div class="container">
+
+            <div class="cta-box text-center">
+
+                <div class="cta-icon">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                </div>
+
+                <h2>
+                    Need Engineering or Facility Support?
+                </h2>
+
+                <p>
+                    Talk to SVS Engineers Co. about your renovation,
+                    infrastructure, AMC/CAMC or engineering requirements.
+                </p>
+
+                <div>
+
+                    <a href="contact.html" class="btn btn-warning btn-lg">
+
+                        Request a Quote
+                        <i class="fa-solid fa-arrow-right ms-2"></i>
+
+                    </a>
+
+                    <a href="https://wa.me/918218008710?text=Hello%20SVS%20Engineers,%20I%20would%20like%20to%20discuss%20my%20project."
+                        target="_blank" class="btn btn-success btn-lg ms-2">
+
+                        <i class="fab fa-whatsapp me-2"></i>
+                        WhatsApp Us
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FLOATING WHATSAPP ================= -->
+
+    <div class="floating-contact-wrap">
+
+        <a class="floating-btn btn-whatsapp" title="Chat on WhatsApp"
+            href="https://wa.me/918218008710?text=Hello%20SVS%20Engineers,%20I%20would%20like%20to%20discuss%20my%20project."
+            target="_blank">
+
+            <i class="fab fa-whatsapp"></i>
+
+        </a>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
 
     <footer class="footer">
 
         <div class="container">
 
-            <div class="row">
+            <div class="row g-4">
 
                 <div class="col-md-4">
+
                     <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+
                         <img src="assets/images/logo.png" alt="SVS Engineers Co. Logo" class="navbar-logo me-2">
+
                         <span>SVS ENGINEERS CO.</span>
+
                     </a>
 
                     <p>
+                        Engineering Excellence You Can Trust.
+                    </p>
 
-                        Engineering Excellence You Can Trust
-
+                    <p class="footer-description">
+                        Integrated engineering, infrastructure,
+                        maintenance and facility solutions.
                     </p>
 
                 </div>
 
+
                 <div class="col-md-4">
 
-                    <h4>Quick Links</h4>
+                    <h4>
+                        Quick Links
+                    </h4>
 
                     <ul class="list-unstyled">
 
-                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
 
-                        <li><a href="about.html">About</a></li>
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
 
-                        <li><a href="services.html">Services</a></li>
+                        <li>
+                            <a href="services.html">
+                                Services
+                            </a>
+                        </li>
 
-                        <li><a href="projects.html">Projects</a></li>
+                        <li>
+                            <a href="projects.html">
+                                Projects
+                            </a>
+                        </li>
 
-                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
 
                     </ul>
 
                 </div>
 
+
                 <div class="col-md-4">
 
-                    <h4>Contact</h4>
-                    <p><i class="fa-solid fa-phone contact-icon"></i> +91 82180 08710</p>
-                    <p><i class="fa-solid fa-phone contact-icon"></i> +91 88826 20668</p>
-                    <p><i class="fa-solid fa-envelope contact-icon"></i> svsengineers.co@gmail.com</p>
-                    <p>Delhi, India</p>
+                    <h4>
+                        Contact
+                    </h4>
+
+                    <p>
+                        <i class="fa-solid fa-phone contact-icon"></i>
+                        +91 82180 08710
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone contact-icon"></i>
+                        +91 88826 20668
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope contact-icon"></i>
+                        svsengineers.co@gmail.com
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot contact-icon"></i>
+                        Delhi, India
+                    </p>
 
                 </div>
 
@@ -373,7 +1408,7 @@
 
             <hr>
 
-            <p class="text-center">
+            <p class="text-center mb-0">
 
                 © 2026 SVS Engineers Co. All Rights Reserved.
 
@@ -383,9 +1418,53 @@
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ================= SCRIPTS ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
 
     <script src="assets/js/script.js"></script>
+
+
+    <!-- Simple scroll reveal -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const cards = document.querySelectorAll(
+                ".modern-service-card, .infra-card, .amc-card, .renovation-item, .process-step"
+            );
+
+            const observer = new IntersectionObserver(
+                function (entries) {
+
+                    entries.forEach(function (entry) {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("show");
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+            cards.forEach(function (card) {
+
+                observer.observe(card);
+
+            });
+
+        });
+
+    </script>
 
 </body>
 
